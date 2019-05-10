@@ -1,0 +1,491 @@
+/* ------- Спецификация ------- */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    color: #000;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+div, p, form, input, a, span, button {
+    box-sizing: border-box;
+}
+
+p {
+    margin: 0;
+    line-height: 1.45em;
+    letter-spacing: 0.02em;
+}
+
+ul, li {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 900;
+    margin: 0;
+    padding: 0;
+    line-height: 1.25em;
+    letter-spacing: 0.02em;
+}
+
+h2 {
+    font-size: 28px;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+h4 {
+    font-size: 17px;
+}
+
+a, a:hover, a:active {
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+
+button, input, p, input::-webkit-input-placeholder {
+    transition: all 0.5s ease;
+}
+
+.btn {
+    font-weight: 900;
+    color: #fff;
+    background: #4acc4d;
+    font-size: 16px;
+    display: block;
+    text-align: center;
+    width: 269px;
+    padding: 19px 0;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+.btn:active {
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+}
+
+input {
+    display: block;
+    border: none;
+}
+
+input, input:hover, input:focus, input:active,
+button, button:hover, button:focus, button:active {
+    outline: none;
+}
+
+input::-webkit-input-placeholder {
+    color: #b8b8b8;
+}
+
+input:hover::-webkit-input-placeholder, input:focus::-webkit-input-placeholder {
+    color: #000;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.j-content-between {
+    justify-content: space-between;
+}
+
+.j-content-around {
+    justify-content: space-around;
+}
+
+.j-content-center {
+    justify-content: center;
+}
+
+.j-content-end {
+    justify-content: flex-end;
+}
+
+.a-items-center {
+    align-items: center;
+}
+
+/* ----- header ----- */
+
+.navigation {
+    padding-top: 16px;
+    padding-bottom: 23px;
+}
+
+.logo__icon {
+    font-size: 25px;
+    width: 49px;
+    height: 49px;
+    line-height: 49px;
+    text-align: center;
+    color: #fff;
+    background: #1b3bde;
+    border-radius: 5px;
+    margin-right: 13px;
+}
+
+.logo__name {
+    font-size: 14.55px;
+    color: #1b3bde;
+    text-transform: uppercase;
+    font-weight: 900;
+    width: 100px;
+}
+
+.logo__name span {
+    font-size: 20.21px;
+    padding-top: 4px;
+}
+
+.menu {
+    margin-left: 80px;
+}
+
+.menu__item:not(:last-child) {
+    margin-right: 7px;
+}
+
+.menu__link {
+    color: #000;
+    font-size: 13px;
+    padding: 7px 20px;
+    text-align: center;
+}
+
+.menu__link:hover {
+    background: #000;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.phone  {
+    margin-left: auto;
+    font-weight: 900;
+    color: #000;
+}
+
+.intro {
+    background: #f0f7f7 url('../img/bg-grey.jpg') no-repeat center top / cover;
+    padding-top: 89px;
+    padding-bottom: 134px;
+    box-shadow: 0 -11px 2px rgba(0, 0, 0, 0.04);
+}
+
+.offer {
+    width: 550px;
+    text-align: center;
+}
+
+.offer__workshop {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.offer__title {
+    font-size: 45px;
+    color: #1b3bde;
+    margin-top: 27px;
+}
+
+.offer__date {
+    font-size: 14px;
+    color: #fff;
+    padding: 6px;
+    background: #000;
+    border-radius: 3px;
+    width: 150px;
+    margin: 24px auto;
+}
+
+.offer__date:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+.form {
+    width: 333px;
+    background: #fff;
+    padding: 35px 34px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 0 90px rgba(0, 0, 0, 0.3);
+}
+
+.form__text {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.form__input {
+    width: 269px;
+    font-size: 13px;
+    padding: 13px 0;
+    border-bottom: 1px solid #bababa;
+}
+
+.form__input:not(:last-child) {
+    margin-bottom: 7px;
+}
+
+.form__submit {
+    margin-top: 20px;
+}
+
+
+.form__input:hover, .form__input:focus {
+    border-bottom: 1px solid #000;
+}
+
+.form__safety {
+    color: #adadad;
+    margin-top: 18px;
+    font-size: 12px;
+}
+
+/* ----- know ----- */
+
+.know {
+    padding-top: 123px;
+}
+
+.author {
+    background-color: #9d6bdc;
+    color: #fff;
+    width: 467px;
+    padding: 40px 0 50px 57px;
+    border-radius: 5px;
+    width: 469px;
+}
+
+.author__name {
+    font-weight: 900;
+    font-size: 18px;
+}
+
+.author__line:not(:last-child) {
+    margin-top: 15px;
+}
+
+.author__digits {
+    margin-top: 21px;
+}
+
+.author__element:not(:last-child) {
+    margin-right: 35px;
+}
+
+.author__icon {
+    font-size: 39px;
+    font-weight: 700;
+    margin-right: 18px;
+}
+
+.author__text {
+    font-size: 13px;
+}
+
+.author__text_long {
+    width: 75px;
+}
+
+.author__text_short {
+    width: 42px;
+}
+
+.author__link {
+    display: block;
+    font-size: 14px;
+    font-weight: 900;
+    color: #fff;
+    margin-top: 15px;
+}
+
+.stats {
+    width: 450px;
+    margin-left: 97px;
+    padding-top: 65px;
+}
+
+.stats__text {
+    margin-top: 15px;
+}
+
+/* ----- money ----- */
+
+.money {
+    padding-top: 65px;
+    padding-bottom: 122px;
+}
+
+.question {
+    width: 445px;
+    margin-right: 97px;
+}
+
+.question__text {
+    margin-top: 15px;
+}
+
+.amount {
+    background: #f6e23a;
+    width: 468px;
+    text-align: center;
+    padding: 90px 0;
+    border-radius: 5px;
+    box-shadow: 0 0 80px rgba(171, 166, 166, 0.7);
+}
+
+.amount__money {
+    font-size: 43px;
+    font-weight: 900;
+    width: 130px;
+}
+
+.amount__money span {
+    font-weight: 400;
+    font-size: 21px;
+    display: block;
+}
+
+/* ----- goals ----- */
+
+.how {
+    background: #f0f7f7 url('../img/bg-grey.jpg') no-repeat center top / cover;
+    padding-top: 110px;
+    padding-bottom: 105px;
+}
+
+.goals__list {
+    margin-top: 75px;
+}
+
+.goals__item {
+    display: flex;
+    width: 340px;
+}
+
+.goals__item span {
+    display: block;
+    width: 82px;
+    height: 82px;
+    font-size: 26px;
+    font-weight: 900;
+    background: #1b3bde;
+    color: #fff;
+    text-align: center;
+    line-height: 82px;
+    border-radius: 5px;
+}
+
+.goals__skill {
+    margin-left: 35px;
+    width: 218px;
+    padding-top: 17px;
+}
+
+.goals__skill h3 {
+    color: #1b3bde;
+    font-size: 19px;
+}
+
+.goals__skill p {
+    margin-top: 14px;
+}
+
+/* ----- summary ----- */
+
+.summary {
+    padding-top: 87px;
+    padding-bottom: 100px;
+}
+
+.achievement__list {
+    color: #fff;
+    margin-top: 65px;
+}
+
+.achievement__item {
+    width: 348px;
+    border-radius: 5px;
+    padding: 65px 0 60px;
+    text-align: center;
+}
+
+.achievement__item_green {
+    background: #4acc4d;
+}
+
+.achievement__item_turquoise {
+    background: #4ac7cc;
+    box-shadow: 0 7px 10px rgba(0, 0, 0, 0.22)
+}
+
+.achievement__item_coral {
+    background: #dc6b83;
+}
+
+.achievement__item i {
+    font-size: 42px;
+}
+
+.achievement__item p {
+    font-size: 19px;
+    font-weight: 900;
+    width: 255px;
+    margin: 15px auto 0;
+}
+
+/* ----- reg ----- */
+
+.reg {
+    background: #3350e0 url('../img/bg-blue.jpg') no-repeat center top / cover;
+    padding: 103px 0;
+}
+
+.opport {
+    color: #fff;
+    width: 580px;
+    text-align: center;
+}
+
+.opport__workshop, .opport__date {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.opport__title {
+    margin: 27px 0;
+}
+
+.opport__info:not(:last-child) {
+    margin-right: 17px;
+}
+
+/* ----- footer ----- */
+
+.footer {
+    padding: 24px 0;
+}
+
+.credits {
+    font-size: 12px;
+    margin-left: 150px;
+}
+
+
