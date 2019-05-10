@@ -1,2 +1,2 @@
-# denbohach.github.io
+# Denys Bohach
 Мой первый опубликованный сайт
