@@ -1,0 +1,641 @@
+/* ----- Подключение шрифтов ----- */
+
+@font-face {
+    font-family: 'Museo Sans';
+    src: url('../fonts/MuseoSansCyrl-100.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/MuseoSansCyrl-100.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/MuseoSansCyrl-100.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/MuseoSansCyrl-100.woff') format('woff'), /* Pretty Modern Browsers */
+         url('../fonts/MuseoSansCyrl-100.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/MuseoSansCyrl-100.svg#svgFontName') format('svg'); /* Legacy iOS */
+         font-weight: 100;
+  }
+
+@font-face {
+font-family: 'Museo Sans';
+src: url('../fonts/MuseoSansCyrl-300.eot'); /* IE9 Compat Modes */
+src: url('../fonts/MuseoSansCyrl-300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('../fonts/MuseoSansCyrl-300.woff2') format('woff2'), /* Super Modern Browsers */
+        url('../fonts/MuseoSansCyrl-300.woff') format('woff'), /* Pretty Modern Browsers */
+        url('../fonts/MuseoSansCyrl-300.ttf')  format('truetype'), /* Safari, Android, iOS */
+        url('../fonts/MuseoSansCyrl-300.svg#svgFontName') format('svg'); /* Legacy iOS */
+        font-weight: 300;
+}
+
+@font-face {
+font-family: 'Museo Sans';
+src: url('../fonts/MuseoSansCyrl-900.eot'); /* IE9 Compat Modes */
+src: url('../fonts/MuseoSansCyrl-900.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('../fonts/MuseoSansCyrl-900.woff2') format('woff2'), /* Super Modern Browsers */
+        url('../fonts/MuseoSansCyrl-900.woff') format('woff'), /* Pretty Modern Browsers */
+        url('../fonts/MuseoSansCyrl-900.ttf')  format('truetype'), /* Safari, Android, iOS */
+        url('../fonts/MuseoSansCyrl-900.svg#svgFontName') format('svg'); /* Legacy iOS */
+        font-weight: 900;
+}
+
+@font-face {
+    font-family: 'Natasha';
+    src: url('../fonts/Natasha.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/Natasha.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+            url('../fonts/Natasha.woff2') format('woff2'), /* Super Modern Browsers */
+            url('../fonts/Natasha.woff') format('woff'), /* Pretty Modern Browsers */
+            url('../fonts/Natasha.ttf')  format('truetype'), /* Safari, Android, iOS */
+            url('../fonts/Natasha.svg#svgFontName') format('svg'); /* Legacy iOS */
+    }
+
+@font-face {
+font-family: 'Stroke-Gap-Icons';
+src: url('../fonts/Stroke-Gap-Icons.eot'); /* IE9 Compat Modes */
+src: url('../fonts/Stroke-Gap-Icons.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('../fonts/Stroke-Gap-Icons.woff2') format('woff2'), /* Super Modern Browsers */
+        url('../fonts/Stroke-Gap-Icons.woff') format('woff'), /* Pretty Modern Browsers */
+        url('../fonts/Stroke-Gap-Icons.ttf')  format('truetype'), /* Safari, Android, iOS */
+        url('../fonts/Stroke-Gap-Icons.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+
+/* ----- Спецификация ----- */
+
+html, body {
+    overflow-x: hidden;
+}
+
+body {
+    font: 300 15px 'Museo Sans', sans-serif;
+    color: #3d3e38;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    width: 940px;
+    margin: 0 auto;
+}
+
+div, p, form, input, a, span, button {
+    box-sizing: border-box;
+}
+
+p {
+    margin: 0;
+    line-height: 1.75em;
+    letter-spacing: 0.02em;
+}
+
+ul, li {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    font-family: 'Natasha', sans-serif;
+    line-height: 1.15em;
+    letter-spacing: 0.12em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 49px;
+}
+
+h2 {
+    font-size: 37px;
+}
+
+h3 {
+    font-size: 22px;
+    color: #888886;
+}
+
+h4 {
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    font-weight: 900;
+}
+
+h5 {
+    font: 100 12px 'Museo Sans', sans-serif;
+    text-transform: uppercase;
+    line-height: 1.4em;
+    letter-spacing: 0.02em;
+}
+
+a, a:hover, a:active {
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+
+button, input, p, input::-webkit-input-placeholder {
+    transition: all 0.5s ease;
+}
+
+.btn {
+    font-weight: 900;
+    color: #fff;
+    background: #4acc4d;
+    font-size: 16px;
+    display: block;
+    text-align: center;
+    width: 269px;
+    padding: 19px 0;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+.btn:active {
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+}
+
+input {
+    display: block;
+    border: none;
+}
+
+input, input:hover, input:focus, input:active,
+button, button:hover, button:focus, button:active {
+    outline: none;
+}
+
+input::-webkit-input-placeholder {
+    color: #b8b8b8;
+}
+
+input:hover::-webkit-input-placeholder, input:focus::-webkit-input-placeholder {
+    color: #000;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.j-content-between {
+    justify-content: space-between;
+}
+
+.j-content-around {
+    justify-content: space-around;
+}
+
+.j-content-center {
+    justify-content: center;
+}
+
+.j-content-end {
+    justify-content: flex-end;
+}
+
+.a-items-center {
+    align-items: center;
+}
+
+/* ----- header ----- */
+
+.header {
+    background: #212416 url(../img/bg.jpg) no-repeat center top / cover;
+    color: #fff;
+    padding-top: 52px;
+    padding-bottom: 82px;
+}
+
+.header a {
+    color: #fff;
+    letter-spacing: 0.12em;
+}
+
+.logo {
+    font: 100 17px 'Museo Sans', sans-serif;
+    text-transform: uppercase;
+}
+
+.logo span {
+    font-weight: 900;
+}
+
+.menu__link {
+    text-transform: uppercase;
+    font: 900 15px 'Museo Sans', sans-serif;
+    border-bottom: 1px solid transparent;
+    padding-bottom: 5px;
+}
+
+.menu__link:hover {
+    border-bottom: 1px solid #6d6d6b;
+    /* color: #f7f7eb; */
+}
+
+.menu__item:not(:last-child) {
+    margin-right: 47px;
+}
+
+.email {
+    font-size: 13px;
+    border-bottom: 1px solid #6d6d6b;
+    padding-bottom: 5px;
+}
+
+.email:hover {
+    border-bottom: 1px solid transparent;
+}
+
+.offer {
+    text-align: center;
+    margin-top: 290px;
+    margin-bottom: 247px;
+}
+
+.offer__text {
+    font-weight: 100;
+    font-size: 29px;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    margin-top: 8px;
+}
+
+.arrow-down {
+    display: block;
+    border: 1px solid #fff;
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    border-radius: 50%;
+    line-height: 36px;
+    margin:  0 auto;
+    text-align: center;
+    letter-spacing: 0!important;
+
+}
+
+.arrow-down:hover {
+    border: 1px solid #6d6d6b;
+    color: #6d6d6b;
+}
+
+/* ----- about ----- */
+
+.about {
+    padding-top: 87px;
+}
+
+.achievements {
+    margin-top: 65px;
+}
+
+.history {
+    width: 440px;
+}
+
+.history__title {
+    margin-bottom: 34px;
+}
+
+.history__text:not(:last-child) {
+    margin-bottom: 1.96em;
+}
+
+.merits {
+    width: 458px;
+}
+
+.digits {
+    margin-bottom: 65px;
+}
+
+.digits__wrap {
+    margin-top: 55px;
+}
+
+.digits__item {
+    width: 115px;
+    text-align: center;
+}
+
+.digits__item h5 {
+    margin-top: 40px;
+}
+
+.digits__item_exp h5 {
+    width: 50px;
+    margin: 40px auto 0;
+}
+
+.digits__icon {
+    margin: 0 auto;
+    width: 72px;
+    height: 72px;
+    border: 1px solid #3d6433;
+    text-align: center;
+    position: relative;
+    font-weight: 100;
+    color: #204d15;
+    font-size: 20px;
+    transform: rotate(45deg);
+}
+
+.digits__icon span {
+    transform: rotate(-45deg);
+    display: block;
+    line-height: 72px;
+}
+
+.digits__icon:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 58px;
+    height: 58px;
+    border: 1px solid #cddbc3;
+    left: 5px;
+    top: 5px;
+}
+
+.contact__title {
+    margin-bottom: 29px;
+}
+
+.contact__link {
+    font: 300 14px 'Museo Sans', sans-serif;
+    color: #3c5e34;
+    display: block;
+    border-bottom: 1px solid #becbbb;
+    padding-bottom: 3px;
+    letter-spacing: 0.120em;
+}
+
+.contact__link:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.contact__text {
+    font-size: 14px;
+    font-style: italic;
+    color: #797a77;
+}
+
+.contact__text span {
+    font-family: 'Stroke-Gap-Icons';
+    font-size: 25px;
+    display: block;
+    text-align: center;
+    background-color: #eef1ed;
+    width: 63px;
+    height: 63px;
+    line-height: 63px;
+    border-radius: 50%;
+    color: #204d15;
+    margin-right: 20px;
+}
+
+/* ----- skills ----- */
+
+.skills {
+    padding-top: 96px;
+}
+
+.skill-list {
+    margin-top: 53px;
+}
+
+.skill-item {
+    width: 220px;
+}
+
+.skill-item__percent {
+    width: 61px;
+    height: 61px;
+    line-height: 61px;
+    text-align: center;
+    font-weight: 100;
+    font-size: 13px;
+    color: #204d15;
+    border: 1px solid #375f2d;
+    border-radius: 50%;
+    margin-right: 27px;
+    position: relative;
+}
+
+.skill-item__percent:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 47px;
+    height: 47px;
+    border: 1px solid #b2b6b1;
+    border-radius: 50%;
+    left: 5px;
+    top: 5px;
+}
+
+.skill-item__text {
+    color: #4b4c47;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 0.12em;
+}
+
+/* ----- works ----- */
+
+.works {
+    padding-top: 80px;
+}
+
+.work-list {
+    margin-top: 50px;
+}
+
+.wokr-list__img {
+    display: block;
+    max-width: 100%;
+}
+
+.wokr-list__item {
+    width: 300px;
+    position: relative;
+}
+
+.work-list__overlay {
+    opacity: 0;
+    background:rgba(0, 0, 0, 0.56);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s ease;
+    flex-direction: column;
+}
+
+.work-list__overlay h4 {
+    margin-bottom: 7px;
+}
+
+.work-list__overlay a {
+    color: #fff;
+    font-size: 13px;
+    border-bottom: 1px solid #a09c9a;
+    padding-bottom: 2px;
+}
+
+.work-list__overlay a:hover {
+    border-bottom: 1px solid transparent;
+}
+
+.wokr-list__item:hover .work-list__overlay {
+    opacity: 1;
+}
+
+/* ----- footer ----- */
+
+.footer {
+    padding-top: 120px;
+    padding-bottom: 105px;
+}
+
+.future {
+    color: #91928f;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+}
+
+/* ----- responsive ----- */
+
+
+/* 992px-1200px */
+@media screen and (max-width: 1200px) {
+
+}
+
+/* 768px-992px */
+@media screen and (max-width: 992px) {
+    .container {
+        width: 720px;
+    }
+    h2 {
+        text-align: center;
+    }
+    h3 {
+        text-align: center;
+    }
+    .achievements {
+        flex-direction: column;
+    }
+    .history, .merits {
+        width: 100%;
+    }
+    .merits {
+        margin-top: 25px;
+    }
+    .contact__wrap {
+        justify-content: space-around;
+    }
+    .wokr-list__item {
+        width: 32%;
+    }    
+    .skill-list {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .skill-item {
+        flex-basis: 36%;
+        margin-bottom: 25px;
+    }
+    .future {
+        text-align: center;
+    }
+}
+
+/* 576px-768px */
+@media screen and (max-width: 768px) {
+    .menu {
+        display: none;
+    }
+    .container {
+        width: 540px;
+    }
+    .offer {
+        margin: 150px auto;
+    }
+    .offer__title {
+        font-size: 36px;
+    }
+    .offer__text {
+        font-size: 20px;
+    }
+    h2 {
+        font-size: 30px;
+    }
+    h3 {
+        font-size: 20px;
+    }
+    .skill-item {
+        margin: 0 0 20px 0!important;
+    }
+    .work-list {
+        flex-direction: column;
+        align-items: center;
+    }
+    .wokr-list__item {
+        margin-bottom: 20px;
+        width: auto;
+    }
+}
+
+/* 320px-576px */
+@media screen and (max-width: 576px) {
+    .container {
+        width: 90%;
+    }
+    .navigation {
+        flex-direction: column;
+    }
+    .logo {
+        margin-bottom: 30px;
+    }
+    .offer {
+        margin: 100px auto;
+    }
+    .offer__title {
+        font-size: 30px;
+    }
+    .offer__text {
+        font-size: 16px;
+    }
+    h2 {
+        font-size: 24px;
+    }
+    h3 {
+        font-size: 18px;
+    }
+    .digits__wrap {
+        flex-direction: column;
+        align-items: center;
+    }
+    .digits__item {
+        margin-bottom: 20px!important;
+    }
+    .contact__wrap {
+        flex-direction: column;
+    }
+    .contact__text {
+        margin-top: 30px;
+    }
+    .skill-list {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+
+
