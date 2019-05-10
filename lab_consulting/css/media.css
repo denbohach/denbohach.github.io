@@ -1,0 +1,194 @@
+/* ----- responsive ----- */
+
+
+/* 992px-1200px */
+@media screen and (max-width: 1199px) {
+    .goal__item {
+        max-width: 300px;
+    }
+    .goal__item_wide {
+        max-width: 355px;
+    }
+}
+
+/* 768px-992px */
+@media screen and (max-width: 991px) {
+    .crumbs__title {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .crumbs__list {
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+    .field {
+        margin-bottom: 40px;
+    }
+    .mission-heading {
+        margin-top: 40px;
+    }
+    .news {
+        padding-bottom: 33px;
+    }
+    .facility {
+        margin-bottom: 50px;
+    }
+    .vantage__item {
+        margin-right: 20px;
+    }
+    .legist__text {
+        max-width: none;
+    }
+    .application {
+        max-width: none;
+    }
+    .map-inside {
+        position: static;
+        min-height: 440px;
+    }
+    .map {
+        padding-top: 0;
+    }    
+    .map-contacts {
+        margin: 40px auto;
+        max-width: 100%;
+    }
+    .map-contacts:before {
+        display: none;
+    }
+    .news__item:after {
+        width: 40%;
+    }
+}
+
+/* 576px-768px */
+@media screen and (max-width: 767px) {
+    .header {
+        padding-bottom: 107px;
+    }
+    h1 {
+       font-size: 45px;
+   }
+   h2 {
+       font-size: 25px;
+   }
+   .company {
+    padding-bottom: 0;
+    }
+   .intro__text {
+       font-size: 25px;
+    }
+    .menu-about__item {
+        margin-bottom: 20px;
+    }
+   .goal__item {
+        max-width: 200px;
+    }
+    .goal__item_wide {
+        max-width: 280px;
+    }
+   .feature {
+        margin-bottom: 50px;
+    }
+   .feature_low {
+        margin-top: 0;
+    }
+    .facility {
+        margin: 0 auto 20px;
+    }
+    .footer-logo {
+        margin-top: 0;
+        margin-bottom: 20px;
+        max-width: 70%;
+    }    
+    .footer-btn {
+        margin: 35px auto 0;
+    }
+    .credits {
+        margin-bottom: 25px;
+    }
+    .credits__author {
+        text-align: left;
+    }
+}
+
+/* 460px-576px */
+@media screen and (max-width: 575px) {
+    .info {
+        text-align: center;
+    }
+    .news__item:after {
+        width: 100%;
+    }
+    .goal__item {
+        max-width: none;
+    }
+    .goal__item_wide {
+        max-width: none;
+    }
+    .goal-btn {
+        margin-bottom: 30px;
+    }
+    .advant__info {
+        margin-top: 30px;
+    }
+    .vantages__content {
+        flex-direction: column;
+    }
+    .vantages__text {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .lawyer {
+        margin: 0 auto 25px;
+    }
+    .legist {
+        text-align: center;
+    }
+    .map-contact__title {
+        margin-bottom: 20px;
+    }
+    .map-contacts__info {
+        flex-direction: column;
+        
+    }
+    .map-contacts__text {
+        max-width: 100%;
+        margin-top: 15px;
+    }
+    .application {
+        background: none;
+    }
+}
+/* 320px-460px */
+@media screen and (max-width: 460px) {
+    .nav-btn span {
+        display: none;
+    }
+    .nav-btn {
+        border: 2px solid #149d6f;
+        border-radius: 50%;
+        
+        font-size: 18px;
+        max-width: 40px;
+        max-height: 40px;
+        line-height: 20px;
+    }
+    .nav-btn:active {
+        border: 2px solid #58647a;
+    }
+    .application__submit {
+        flex-direction: column;
+        align-items: flex-start!important;
+    }
+    .application__btn {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .map-contacts__heading {
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+}
